@@ -1,0 +1,85 @@
+<div style="background: #FFD88F; padding: 20px;"><span style="font-size: 36pt;">Math 1334 - Calculus 1</span></div>
+<p>\(\newcommand{\derRule}[2]{\displaystyle &nbsp;\frac{d}{dx}\left[#1\right] = #2}\)</p>
+<p>This page will contain information about the derivative, and properties of the derivative.&nbsp; You can also find complete list in the textbook's <a class="inline_disabled" href="https://openstax.org/books/calculus-volume-1/pages/b-table-of-derivatives" target="_blank" rel="noopener">Table of Derivatives</a></p>
+<h2 style="border-bottom: 2px solid #D49F50;">Properties of the Derivative</h2>
+<dl class="dl-horizontal" style="border: solid 2px #D49F50; padding-top: 10px; padding-bottom: 10px;">
+    <dt>Derivative - Limit <br />Definition (3.2)</dt>
+    <dd>\(\derRule{f(x)}{\lim_{h\to 0}\frac{f(x + h)-f(x)}{h}}\) <br />
+        <hr />
+    </dd>
+    <dt>Sum/Difference <br />Rule (3.3)</dt>
+    <dd>\(\derRule{f(x)\pm g(x)}{f'(x)\pm g'(x)}\). <br />
+        <hr />
+    </dd>
+    <dt>Constant <br />Multiple Rule (3.3)</dt>
+    <dd>\(\derRule{k\cdot g(x)}{k \cdot g'(x)}\) where \(k\) is a constant&nbsp;
+        <hr />
+    </dd>
+    <dt>Implicit Diff.<br />(3.8)</dt>
+    <dd>Example: \(\displaystyle \frac{d}{dx}\left[x^2 + y^2\right] = \frac{d}{dx}\left[x^2 + \left(y(x)\right)^2\right] = 2 x + 2 y(x)\cdot y'(x)\) <br />
+        <hr />
+    </dd>
+</dl>
+<p>&nbsp;</p>
+<h2 style="border-bottom: 2px solid #D49F50;">Rules for Differentiation&nbsp;</h2>
+<dl class="dl-horizontal" style="border: solid 2px #D49F50; padding-top: 10px; padding-bottom: 10px;">
+    <dt>Constant Function <br />(3.3)</dt>
+    <dd>\(\derRule{c}{0}\) where \(c\) is a constant. <br />
+        <hr />
+    </dd>
+    <dt>Power Rule <br />(3.3)</dt>
+    <dd>\(\derRule{x^n}{nx^{n-1}}\). <br />
+        <hr />
+    </dd>
+    <dt>Product <br />Rule (3.3)</dt>
+    <dd>\(\derRule{f(x)\cdot g(x)}{f'(x)\cdot g(x) + f(x)\cdot g'(x)}\) <br />
+        <hr />
+    </dd>
+    <dt>Quotient <br />Rule (3.3)</dt>
+    <dd>\(\derRule{\frac{f(x)}{g(x)}}{\frac{f'(x)\cdot g(x) - f(x)\cdot g'(x)}{\left(g(x)\right)^2}}\) <br />
+        <hr />
+    </dd>
+    <dt>Chain <br />Rule (3.6)</dt>
+    <dd>\(\derRule{f(g(x))}{f'(g(x))\cdot g'(x)}\) <br />
+        <hr />
+    </dd>
+    <dt>Extended Power <br />Rule (3.6)</dt>
+    <dd>\(\derRule{\left(g(x)\right)^n}{n\left(g(x)\right)^{n-1}\cdot g'(x)}\) <br />
+        <hr />
+    </dd>
+    <dt>Exponential<br />Rules (3.9)</dt>
+    <dd>\(\derRule{e^x}{e^x}\)<br /><br />\(\derRule{a^x}{\ln(a)a^x}\) <br />
+        <hr />
+    </dd>
+    <dt>Extended Exp<br />Rules (3.9)</dt>
+    <dd>\(\derRule{e^{g(x)}}{e^{g(x}g'(x)}\)<br /><br />\(\derRule{a^{g(x)}}{\ln(a)a^{g(x)}g'(x)}\) <br />
+        <hr />
+    </dd>
+    <dt>Logarathim<br />Rules (3.9)</dt>
+    <dd>\(\derRule{\ln(x)}{\frac{1}{x}}\)<br /><br />\(\derRule{\log_a(x)}{\frac{1}{x\ln(a)}}\)&nbsp;<br />
+        <hr />
+    </dd>
+    <dt>Extended Log<br />Rules (3.9)</dt>
+    <dd>\(\derRule{\ln(g(x))}{\frac{g'(x)}{g(x)}}\)<br /><br />\(\derRule{\log_a(g(x))}{\frac{g'(x)}{g(x)\ln(a)}}\)&nbsp;<br />
+        <hr />
+    </dd>
+</dl>
+<h2 style="border-bottom: 2px solid #D49F50;">Derivatives of Trig Functions</h2>
+<dl class="dl-horizontal" style="border: solid 2px #D49F50; padding-top: 10px; padding-bottom: 10px;">
+    <dt>Sine <br />(3.5)</dt>
+    <dd>\(\derRule{\sin(x)}{\cos(x)}\).<br />
+        <hr />
+    </dd>
+    <dt>Cosine <br />(3.5)</dt>
+    <dd>\(\derRule{\cos(x)}{-\sin(x)}\). <br />
+        <hr />
+    </dd>
+    <dt>Tangent <br />(3.5)</dt>
+    <dd>\(\derRule{\tan(x)}{\sec^2(x)}\). <br />
+        <hr />
+    </dd>
+    <dt>Secant <br />(3.5)</dt>
+    <dd>\(\derRule{\sec(x)}{\sec(x)\tan(x)}\). <br />
+        <hr />
+    </dd>
+</dl>

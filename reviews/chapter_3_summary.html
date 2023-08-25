@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./config/styles.css">
+    </head>
+    <script src="./config/mathjax-config.js" defer></script>
+    <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+<body>
+    <div style="background: #FFD88F; padding: 20px;"><span style="font-size: 36pt;">Math 1334 - Calculus</span><span style="font-size: 36pt;"> 1</span></div>
+<h2 style="border-bottom: 2px solid #D49F50;">How to Study/Prepare</h2>
+<p>The best way to prepare for the exam is to <strong>practice!</strong>&nbsp; Specific things you can do are listed below:&nbsp;</p>
+<ul>
+    <li><strong>Read </strong>through the topics covered below as well as the <a class="inline_disabled" href="https://openstax.org/books/calculus-volume-1/pages/3-key-concepts" target="_blank" rel="noopener">key concepts</a> from Chapter 3 of the book.&nbsp; Ask yourself if you know how to do these items.</li>
+    <li><strong>More Practice Problems</strong>: You can find more practice problems from the textbook for section below.&nbsp; Also check out the <a class="inline_disabled" href="https://openstax.org/books/calculus-volume-1/pages/3-review-exercises" target="_blank" rel="noopener">review exercises</a> from the Chapter 3 Review from the textbook (skipping Section 3.7 for now)</li>
+    <li><strong>Review&nbsp;</strong>the lecture notes<br />\(\newcommand{derRule}[2]{\displaystyle \frac{d}{dx}\left[#1\right] = #2}\)</li>
+</ul>
+<h2 style="border-bottom: 2px solid #D49F50;">Topics Covered</h2>
+<p>The exam will cover sections 3.1 - 3.9 (with the exception of Section 3.7) from the book.&nbsp; The follow is a list of topics that may be help to review.</p>
+<h3><strong>Flowchart for Limits</strong><strong></strong></h3>
+<div>
+    <div>Assume that \(f(x)\) is a function of the form considered in class (polynomial, rational, continuous, etc). &nbsp;In order to determine \[\displaystyle \lim_{x\to a} f(x),\]</div>
+    <ul style="list-style-type: disc;">
+        <li><span>If \(a\) </span><span>is finite, try plugging in the value \(x = a\)</span><span> into the function \(f(x)\)</span><span>. &nbsp;If</span>
+            <ul style="list-style-type: disc;">
+                <li><strong>CASE 1: </strong>\(f(a) = L\) where \(L\) is a finite number, and \(f(x)\) is continuous at \(x = a\), then \[\displaystyle \lim_{x\to a} f(x) = f(a),\]</li>
+                <li><strong><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">CASE</span></strong><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;"><strong> 2</strong>: </span>\(f(a)&nbsp; = \frac{L}{0}\) where \(L\) is a nonzero, finite number, then \(\displaystyle \lim_{x\to a} f(x)\) either does not exist, or is infinite.&nbsp; &nbsp; You should always verify an answer of this form by examining a graph of the function near \(x = a\) or by creating a table of values for various \(x\) values near \(x = a\).</li>
+                <li><strong>CASE 3: </strong>\(f(a) = \frac{0}{0}\), then you have an indeterminant form 🚩. &nbsp;In order to determine the limit, you should try to factor and simplify to determine the limit by either (1) factoring and canceling, (2) multiplying by the conjugate, or (3) simplifying any complex fractions. &nbsp;If you get stuck at this point, you can always examine the graph or create a table of values.</li>
+            </ul>
+        </li>
+        <li><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">If \(a\) is infinite, for now,</span><span> use the graph or create a table of values to determine the limit. We will learn more advanced techniques later.</span></li>
+    </ul>
+    <h3><strong>General Skills</strong></h3>
+    <ul style="list-style-type: disc;">
+        <li>Know how to find the<strong> equation of a tangent line</strong> to a curve \(f(x)\) at a point \(x = a\):
+            <ul>
+                <li><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">The slope of the line is the derivative of the function at that point.&nbsp; That is, \(m = f'(a)\)</span></li>
+                <li><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">Use the point \((x_1,y_1)=(a, f(a))\) on the graph of \(f(x)\) and the slope \(m = f'(a)\) </span><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">to find the equation of the line via the&nbsp;<strong>point-slope equation&nbsp;</strong>for a line: \(y - y_1 = m(x - x_1)\).&nbsp;</span></li>
+            </ul>
+        </li>
+        <li><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">Understand the relationship between a function \(f(x)\) and its derivative \(f'(x)\).&nbsp; Specifically, you know be aware of how to use the sign of \(f'(x)\) to determine if \(f(x)\) is <strong>increasing or decreasing at a point</strong>. For example, if \(f'(a)&gt;0\), then \(f(x)\) is increasing at \(x = a\).&nbsp; Similarly, if \(f'(a)&lt;0\), then \(f(x)\) is decreasing at \(x = a\).&nbsp;&nbsp;</span></li>
+    </ul>
+</div>
+<h3><strong>Section 3.1: Defining the Derivative</strong></h3>
+<p>At the end of <a class="inline_disabled" href="https://openstax.org/books/calculus-volume-1/pages/3-1-defining-the-derivative" target="_blank" rel="noopener">Section 3.1</a>, you should be able to&nbsp;</p>
+<ul>
+    <li>Know how to <strong>compute the </strong><strong>average rate of change</strong> (\(m_{\textsf{sec}}\))&nbsp;of a function \(f(x)\) between two points \(x = a\) and \(x = b\).&nbsp; \[m_{\textsf{sec}}&nbsp;= \displaystyle \frac{f(b) - f(a)}{b-a}\]</li>
+    <li><span>Know how to <strong>estimate the a</strong><strong>verage rate of change</strong> by looking at the graph of a function. &nbsp;(Remember the average rate of change between two points is the same things as the slope of the line connecting the two points on the graph - that is, \(m_{\textsf{sec}}\) is the slope of the secant line connecting the two points on the graph).<br /><br /></span></li>
+    <li><span>Know how to <strong>interpret the average rate of change</strong> means plain english. For example, if you are told that \(p(x)\) represents the profit associated with selling \(x\)&nbsp;t-shirts,</span>
+        <ul>
+            <li><span>The quantity \(p(10) - p(4)\) represents the change in profit as the number of t-shirts sold increases from \(x = 4\) to \(x = 10\).</span></li>
+            <li><span>The quantity \(\displaystyle \frac{p(10) - p(4)}{10 - 4}\) represents the average rate of change of the profit as the number of t-shirts sold increases from \(x = 4\) to \(x = 10\).<br /><br /></span></li>
+        </ul>
+    </li>
+    <li>Know how to <strong>compute</strong> the <strong>instantaneous rate of change</strong> (\(m_{\textsf{tan}}\)) of a function \(f(x)\) at a point \(x = a\) via either of the following definitions:&nbsp; \[m_{\textsf{tan}} = \displaystyle \lim_{h\to 0}\frac{f(a + h) - f(a)}{h} \qquad \textsf{or}\qquad m_{\textsf{tan}} = \displaystyle \lim_{x\to a}\frac{f(x) - f(a)}{x-a} \]provided that the limit exists.<br /><br /></li>
+    <li><span>Know how to <strong>estimate the instantaneous rate of change</strong> by looking at the graph of a function. &nbsp;(Remember the instantaneous rate of change at a point is the same things as the slope of the tangent line to the graph at that point).<br /><br /></span></li>
+    <li><span>Know how to <strong>interpret the instantaneous rate of change</strong> in plain english. For example, if you are told that \(p(x)\) represents the profit associated with selling \(x\) t-shirts, then the instantaneous rate of change of \(p(x)\) at \(x = 4\) tells you approximately how much the profit would increase by if you sold one additional shirt.<br /><br /></span></li>
+    <li><span>Know that the units for both the average and instantaneous rate of change of \(f(x)\) are simply the units of \(f(x)\) divided by the units of \(x\).<br /><br /></span></li>
+    <li><span>Know that the notation \(f'(a)\) means the following:&nbsp;</span>
+        <ul>
+            <li><span>the derivative of \(f(x)\) at \(x = a\)</span></li>
+            <li><span>the instantaneous rate of change of \(f(x)\) at \(x = a\)</span></li>
+            <li><span>the slope of the tangent line of \(f(x)\) at \(x = a\)</span></li>
+        </ul>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<h3><strong>Section 3.2: The Derivative as a Function</strong></h3>
+<p>At the end of <a class="inline_disabled" href="https://openstax.org/books/calculus-volume-1/pages/3-2-the-derivative-as-a-function" target="_blank" rel="noopener">Section 3.2</a>, you should be able to&nbsp;</p>
+<ul>
+    <li>Know that the derivative is the same thing as the slope of the tangent line at a particular point \(x\).<br /><br /></li>
+    <li><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">Know how to <strong>calculate the derivative by using the limit definition</strong> \[</span><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">f^</span><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">\prime</span><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">(x) = </span><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">\displaystyle</span><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;"> </span><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">\lim</span><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">_{h</span><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">\to</span><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;"> </span><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">0</span><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">}</span><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">\frac</span><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">{f(x + h) - f(x)}{h}\]provided that the limit exists.&nbsp;&nbsp;<br /><br /></span></li>
+    <li>Know how to find the<strong> equation of a tangent line</strong> to a curve \(f(x)\) at a point \(x = a\):
+        <ul>
+            <li><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">The slope of the line is the derivative of the function at that point.&nbsp; That is, \(m = f'(a)\)</span></li>
+            <li><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">Use the point \((x_1,y_1)=(a, f(a))\) on the graph of \(f(x)\) and the slope \(m = f'(a)\) </span><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">to find the equation of the line via the&nbsp;<strong>point-slope equation&nbsp;</strong>for a line: \(y - y_1 = m(x - x_1)\).&nbsp;<br /><br /></span></li>
+        </ul>
+    </li>
+    <li>Remember <strong>techniques/tricks for finding the derivative </strong>using the definition based on the type of expression:
+        <ul>
+            <li>if you are asked to find the derivative of a&nbsp;<strong>polynomial</strong> function using the definition, you will need to expand terms of the form \((x + h)^n\).&nbsp; In this case, it can be helpful to use Pascal's Triangle (<a class="inline_disabled" href="https://youtu.be/v9Evg2tBdRk?t=46" target="_blank" rel="noopener">see this video for an example</a>).</li>
+            <li>If you are asked to find the derivative of a <strong>square root</strong> function using the definition, you will want to "multiply by the conjugate" at some point in the simplification process.&nbsp;</li>
+            <li>If you are asked to find the derivative of a <strong>rational function</strong> using the definition, you will want to find a "common denominator" at some point to simplify the expression<br /><br /></li>
+        </ul>
+    </li>
+    <li>Don't forget that there are several different notations for the derivative of a function. &nbsp;For example, the derivative of $f(x)$ can be expressed using the following different notations: \[f'(x), \quad y', \quad \frac{df}{dx}, \quad &nbsp;\frac{d}{dx}\left(f(x)\right), \quad D_x\left[f(x)\right],\quad f_x(x), \quad\ldots\]</li>
+    <li><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">Know that the derivative of \(f(x)\) is not defined at \(x = a\)</span>
+        <ul>
+            <li><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">\(f(x)\) has a corner at \(x = a\)</span></li>
+            <li><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">\(f(x)\) is undefined at \(x = a\)</span></li>
+            <li><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">\(f(x)\) has a vertical asymptote at \(x = a\)</span></li>
+            <li><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">there is a jump in the value of \(f(x)\) at \(x = a\).<br /><br /></span></li>
+        </ul>
+    </li>
+    <li><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">Use the sign of \(f'(x)\) to determine if \(f(x)\) is <strong>increasing or decreasing</strong>.&nbsp; That is, if \(f'(a)&gt;0\), then \(f(x)\) is increasing at \(x = a\).&nbsp; Similarly, if \(f'(a)&lt;0\), then \(f(x)\) is decreasing at \(x = a\).&nbsp;&nbsp;</span></li>
+</ul>
+<p>&nbsp;</p>
+<h3><strong>Section 3.2: Differentiation Rules</strong></h3>
+<p>At the end of <a class="inline_disabled" href="https://openstax.org/books/calculus-volume-1/pages/3-3-differentiation-rules" target="_blank" rel="noopener">Section 3.3</a>, you should...</p>
+<ul>
+    <li>Understand how to <strong>rewrite radicals as power functions</strong> with fractional exponents.&nbsp; For example, \[\sqrt{x} = x^{\frac{1}{2}}\qquad \sqrt{t^3} = t^{\frac{3}{2}}, \qquad \sqrt[3]{y^4} = y^{\frac{4}{2}}\]</li>
+    <li>Understand how to <strong>rewrite fractions as power functions</strong> with negative exponents.&nbsp; For example, \[\frac{1}{x} = x^{-1}\qquad \frac{1}{\sqrt{x}} = x^{-\frac{1}{2}},\qquad \frac{3x}{(x^2 +1)^3} = 3x\cdot\left(x^2+1\right)^{-3}\]</li>
+    <li>Know how to use the following basic rules to compute derivatives
+        <ul>
+            <li><strong>Constant Functions: </strong>\(\derRule{c}{0}\) where \(c\) is a constant<br /><br /></li>
+            <li><strong>Power Rule:</strong> \(\derRule{x^n}{nx^{n-1}}\)&nbsp;<br /><br /></li>
+            <li><strong>Sum/Difference Rule</strong>: \(\derRule{f(x)\pm g(x)}{f'(x)\pm g'(x)}\).<br /><br /></li>
+            <li><strong>Constant Multiple Rule</strong>: \(\derRule{k\cdot g(x)}{k \cdot g'(x)}\) where \(k\) is a constant&nbsp;<br /><br /></li>
+        </ul>
+    </li>
+    <li>Know how to Use the following more advanced rules to compute derivatives
+        <ul>
+            <li><strong>Product Rule:</strong> \[\derRule{f(x)\cdot g(x)}{f'(x)\cdot g(x) + f(x)\cdot g'(x)}\]</li>
+            <li><strong>Quotient Rule: </strong>\[\derRule{\frac{f(x)}{g(x)}}{\frac{f'(x)\cdot g(x) - f(x)\cdot g'(x)}{\left(g(x)\right)^2}}\]</li>
+        </ul>
+    </li>
+    <li>Know when and how to combine all of the above rules in order to compute derivatives.</li>
+</ul>
+<p>&nbsp;</p>
+<h3><strong>Section 3.4: Derivatives as Rates of Change</strong></h3>
+<p>At the end of <a style="font-family: inherit; font-size: 1rem;" href="https://openstax.org/books/calculus-volume-1/pages/3-4-derivatives-as-rates-of-change" target="_blank" rel="noopener">Section 3.4</a>, you should ...</p>
+<ul>
+    <li>Recognize the commonly used function names for <strong>position</strong>, <strong>velocity</strong>, and <strong>acceleration</strong>:
+        <ul>
+            <li>position: \(s(t)\)</li>
+            <li>velocity: \(v(t)\)</li>
+            <li>acceleration \(a(t)\)</li>
+        </ul>
+    </li>
+    <li>Understand the <strong>relationship between position, velocity, and acceleration</strong>.
+        <ul>
+            <li>the rate of change of position is equal to the velocity.&nbsp; That is, \[s'(t) = \frac{ds}{dt} = v(t)\]</li>
+            <li>the rate of change of velocity is equal to the acceleration.&nbsp; That is, \[v'(t) = \frac{dv}{dt} = a(t)\]</li>
+            <li>the second derivative of position is equal to acceleration.&nbsp; That is, \[s''(t) = \frac{d^2s}{dt^2} = a(t)\]</li>
+        </ul>
+    </li>
+    <li>Understand the <strong>difference between speed and velocity</strong>.&nbsp; Speed is the absolute value of velocity.</li>
+    <li>Know how <strong>Revenue </strong>\(R(x)\), <strong>Cost </strong>\(C(x)\), and <strong>Profit </strong>\(P(x)\) are related.&nbsp;
+        <ul>
+            <li>The Profit is the difference between Revenue and Cost.&nbsp; That is, \(P(x) = R(x) - C(x)\).</li>
+        </ul>
+    </li>
+    <li>Know the defintions of <strong>Marginal Revenue</strong> \(R'(x)\), <strong>Marginal Cost</strong> \(C'(x)\), and <strong>Marginal Profit</strong> \(P'(x)\).&nbsp;</li>
+    <li>Know how to use the expression \(f(a + h) \approx f(a) + f'(a)h\) to<strong> estimate \(f(a + h)\) given \(f'(a)\) and \(f(a)\)</strong>.&nbsp; Example applications are listed below:
+        <ul>
+            <li>The population growth rate and the present population can be used to predict the size of a future population.&nbsp;&nbsp;</li>
+            <li>Marginal cost, marginal revenue, and marginal profit fuctions can be used to predict, respectively, the cost of producing one more item, the revenue obtained by selling one more item, and the profit obtained by producing and selling one more item.&nbsp;</li>
+        </ul>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<h3><strong>Section 3.5: Derivatives of Trigonometric Functions</strong></h3>
+<p>At the end of <a href="https://openstax.org/books/calculus-volume-1/pages/3-5-derivatives-of-trigonometric-functions" target="_blank" rel="noopener">Section 3.5</a>, you should ...&nbsp;</p>
+<ul>
+    <li>Be able to <strong>recall </strong><strong>basic trig functions</strong>.&nbsp; Specifically, how \(\tan(x)\), \(\csc(x)\), \(\sec(x)\), and \(\cot(x)\) are related to \(\sin(x)\) and \(\cos(x)\).&nbsp; That is, \[\tan(x) = \frac{\sin(x)}{\cos(x)}\qquad \csc(x) = \frac{1}{\sin(x)}, \qquad \sec(x) = \frac{1}{\cos(x)}, \qquad \cot(x) = \frac{\cos(x)}{\sin(x)}.\]</li>
+    <li>be able to <strong>recognize the notation</strong> that \(\sin^2(x) = \left(\sin(x)\right)^2\), but that this is an abuse of notation in that \(\sin^{-1}(x) \neq \left(\sin(x)\right)^{-1}\).&nbsp; Specifically, the notation \(\sin^{-1}(x) \) is reserved for the arcsine \(\sin^{-1}(x) = \textrm{arcsin}(x)\)</li>
+    <li>be able to <strong>recall basic trig identites</strong> such as \(\sin^2(x) + \cos^2(x) = 1\). See <a title="Reference: Formulas for Trig and Hyperbolic Trig Functions" href="https://seattleu.instructure.com/courses/1610154/pages/reference-formulas-for-trig-and-hyperbolic-trig-functions?wrap=1" data-api-endpoint="https://seattleu.instructure.com/api/v1/courses/1610154/pages/reference-formulas-for-trig-and-hyperbolic-trig-functions" data-api-returntype="Page">Reference: Formulas for Trig and Hyperbolic Trig Functions</a> for more information</li>
+    <li>be able to <strong>compute the derivatives</strong> of \(\sin(x)\) and \(\cos(x)\) by using the definition of the derivative and the limit formulas in conjunction with the trig identites \(\sin(x + h) = \sin(x)\cos(h) + \cos(x)\sin(h)\) and \(\cos(x + h) = \cos(x)\cos(h) + \sin(x)\sin(h)\).</li>
+    <li><strong>memorize </strong>that \[\frac{d}{dx}\sin(x) = \cos(x), \qquad \frac{d}{dx}\cos(x) = -\sin(x)\]</li>
+    <li>Know how to use the above two rules for the derivative of \(\sin(x)\) and \(\cos(x)\) to <strong>compute the derivatives of all six trig functions</strong>.&nbsp;&nbsp;
+        <ul>
+            <li>Example: use the above two rules, in addition to the quotient rule and basic trig identities to find \(\frac{d}{dx}\tan(x) \) by rewriting \(\tan(x)\) as follows: \[\begin{eqnarray*}\frac{d}{dx}\tan(x) &amp;=&amp; \frac{d}{dx}\frac{\sin(x)}{\cos(x)}\\&amp;=&amp;\frac{\cos(x)\cdot\cos(x) - \sin(x)\cdot(-\sin(x))}{(\cos(x))^2}\\&amp;=&amp;\frac{\cos^2(x) + \sin^2(x)}{\cos^2(x)}\\&amp;=&amp;\frac{1}{\cos^2(x)}\\&amp;=&amp;\sec^2(x)\end{eqnarray*}\]</li>
+        </ul>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<h3><strong>Section 3.6: The Chain Rule</strong></h3>
+<p>At the end of <a style="font-family: inherit; font-size: 1rem;" href="https://openstax.org/books/calculus-volume-1/pages/3-6-the-chain-rule" target="_blank" rel="noopener">Section 3.6</a><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">:</span></p>
+<ul style="list-style-type: disc;">
+    <li>You should know how to use the&nbsp;<strong>chain rule</strong> to take the derivative of the composition of two functions.&nbsp; The Chain rule states that for \(h(x) = f(g(x))\), \[h'(x) = f'(g(x))\cdot g'(x)\]</li>
+    <li>Know that there are alternative notations for the chain rule.&nbsp; For example, if \(y\) is a function of \(u\), and \(u\) is a function of \(x\), then \[\frac{dy}{dx} = \frac{dy}{du}\cdot\frac{du}{dx}\]For example, if \(y = u^2\) and \(u = x^3 + 2x\), then \[\begin{eqnarray*}\frac{dy}{dx}&amp;=&amp;\frac{dy}{du}\cdot\frac{du}{dx}\\&amp;=&amp;2u\cdot\left(3x^2 + 2\right)\\&amp;=&amp;2(x^3 + 2x)(3x^2 + 2)\end{eqnarray*}\]where in the last line, we used the fact that \(u = x^3 + 2x\).&nbsp;</li>
+    <li>You should know how to <strong>use the&nbsp;chain rule, in conjunction with&nbsp;other differentiation rules</strong> (such as the product rule, the quotient rule, etc) to take the derivative of complicated functions such as the following examples: \[\displaystyle \frac{d}{dx}\left[\frac{x}{\sqrt{x+1}}\right] \quad \&amp; \quad \displaystyle \frac{d}{dx}\left[\sin(x^2 + 1)(x^3 + 2x)^2\right]\]</li>
+</ul>
+<h3><strong>Section 3.8: Implicit Differentiation</strong></h3>
+<p>At the end of <a class="inline_disabled" href="https://openstax.org/books/calculus-volume-1/pages/3-8-implicit-differentiation" target="_blank" rel="noopener">Section 3.8</a>, you should</p>
+<ul>
+    <li>know how to take the derivative of implicitly defined functions.&nbsp; For example, to find \(\displaystyle \frac{dy}{dx}\) if \(x^2 + y^2 = 9\), perform the following steps:&nbsp;
+        <ul>
+            <li><strong>Step 1</strong>: replace \(y\to y(x)\) to find \[x^2 + \left(y(x)\right)^2 = 9\]</li>
+            <li><strong>Step 2</strong>: take \(\frac{d}{dx}\) of both sides of the equation using the appropriate rules (product, quotient, and chain rules)\[ \begin{eqnarray*}<br />\frac{d}{dx}\left[x^2 + \left(y(x)\right)^2\right] &amp;=&amp;\frac{d}{dx}\left[9\right]\\<br />\frac{d}{dx}\left[x^2\right] + \frac{d}{dx}\left[\left(y(x)\right)^2\right] &amp;=&amp;\frac{d}{dx}\left[9\right]\\2x + 2y(x)y'(x)&amp;=&amp;0\end{eqnarray*}\]</li>
+            <li><strong>Step 3</strong>: Solve for \(y'(x)\) to find \[y'(x) = -\frac{2x}{2y} = -\frac{x}{y}\]</li>
+            <li><strong>Step 4 (optional)</strong>: If possible, solve the original equation for \(y\) and replace \(y\) with this expression in \(y'(x)\).&nbsp; For example, if we restrict ourself to the top half of the circle, then \(x^2 + y^2 = 9\) corresponds to \(y = \sqrt{9-x^2}\).&nbsp; And thus, \[y'(x) = -\frac{x}{y} = -\frac{x}{\sqrt{9-x^2}}\]</li>
+        </ul>
+    </li>
+</ul>
+<h3><strong>Section 3.9: Derivatives of Exp and Log Functions</strong></h3>
+<p>At the end of <a class="inline_disabled" href="https://openstax.org/books/calculus-volume-1/pages/3-9-derivatives-of-exponential-and-logarithmic-functions" target="_blank" rel="noopener">Section 3.9</a>, you should be able to...</p>
+<ul>
+    <li>Know the basic ways to&nbsp;<strong>simplify exponents</strong> \[a^m\cdot a^n = a^{m+n} \qquad \frac{a^m}{a^n} = a^{m-n}\qquad \left(a^m\right)^n = a^{m\cdot n}\]&nbsp;</li>
+    <li>Know the basic ways to&nbsp;<strong>simplify expressions involving logarithms</strong> \[\ln(a\cdot b) = \ln(a) + \ln(b) \qquad \ln\left(\frac{a}{b}\right)= \ln(a) - \ln(b) \qquad \ln(a^m) = m\ln(a)\]</li>
+    <li>Know that \(f(x) = e^x\) and \(g(x) = \ln(x)\) are&nbsp;<strong>inverse functions.</strong> That is, \(f(g(x)) = e^{\ln(x)} = x\) and \(\ln(e^x) = x\).&nbsp; Know how to use this information to solve equations involving exponentials and logarithms.&nbsp;&nbsp;</li>
+    <li>Know the following<strong> differentiation rules</strong><br />
+        <table style="border-collapse: collapse; width: 93.1387%;" border="0">
+            <tbody>
+                <tr>
+                    <td style="width: 13.8136%; text-align: right;"><strong>Exp Rule</strong></td>
+                    <td style="width: 1.68067%;"><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">&nbsp;</span></td>
+                    <td style="width: 51.1245%;"><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">\(\derRule{e^x}{x^x}\)</span></td>
+                </tr>
+                <tr>
+                    <td style="width: 13.8136%; text-align: right;"><strong><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">LN Rule</span></strong></td>
+                    <td style="width: 1.68067%;"><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">&nbsp;</span></td>
+                    <td style="width: 51.1245%;"><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">\(\derRule{\ln(x)}{\frac{1}{x}}\)</span></td>
+                </tr>
+                <tr>
+                    <td style="width: 13.8136%; text-align: right;"><strong><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">Ext. Exp Rule</span></strong></td>
+                    <td style="width: 1.68067%;"><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">&nbsp;</span></td>
+                    <td style="width: 51.1245%;"><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">\(\derRule{e^{g(x)}}{e^{g(x)}g'(x)}\)</span></td>
+                </tr>
+                <tr>
+                    <td style="width: 13.8136%; text-align: right;"><strong><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">Ext. LN Rule</span></strong></td>
+                    <td style="width: 1.68067%;"><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">&nbsp;</span></td>
+                    <td style="width: 51.1245%;"><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">\(\derRule{\ln(g(x))}{\frac{g'(x)}{g(x)}}\)</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>
